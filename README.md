@@ -8,6 +8,10 @@ react-three-fiber/tutorials [Loading FBX models](https://docs.pmnd.rs/react-thre
 react-three-fbx-viewer [codesandbox](https://codesandbox.io/s/superdev-0604-modelview-x4988)  
 react-three-fiber [environment](https://sbcode.net/react-three-fiber/environment/)  
 
+## stackoverflow
+
+[Loading .fbx file from URL ](https://stackoverflow.com/questions/56230508/loading-fbx-file-from-url-is-that-possible)
+
 ## Available Scripts
 
 In the project directory, you can run:
