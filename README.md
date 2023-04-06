@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## References
 
+react-three-fiber/tutorials [Loading FBX models](https://docs.pmnd.rs/react-three-fiber/tutorials/loading-models)  
 react-three-fbx-viewer [codesandbox](https://codesandbox.io/s/superdev-0604-modelview-x4988)  
 react-three-fiber [environment](https://sbcode.net/react-three-fiber/environment/)  
 
