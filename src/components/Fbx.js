@@ -19,13 +19,18 @@ const Scene = () => {
   // const fbx = useFBX(url); //  gun.fbx // 'test.fbx'
   const file = 'test.fbx';
   // const fbx = useLoader(FBXLoader, file)
-  const fbx = useLoader(FBXLoader, url7);
+  const fbx = useLoader(FBXLoader, file);
 
   return (
     <>
-      <ambientLight intensity={0.05} />
+      <ambientLight intensity={0.5}/>
       <pointLight position={[10, 10, 10]} />
-      <primitive object={fbx} scale={0.1} position={[0, -2, 0]} />
+      <pointLight position={[-10, 10, 10]} />
+      <pointLight position={[10, 10, 10]} />
+      <pointLight position={[10, -10, 10]} />
+      <pointLight position={[0, 10, 10]} />
+      <pointLight position={[0, -10, -10]} />
+      <primitive object={fbx} scale={0.5} position={[0, -3, 0]} />
     </>
   );
 };
@@ -33,15 +38,15 @@ const Scene = () => {
 const Scene2 = () => {
 
   const url = 'https://threejs.org/examples/models/fbx/Samba%20Dancing.fbx';
-
+  const file = 'sun.fbx';
   // const fbx = useLoader(FBXLoader, file)
-  const fbx = useLoader(FBXLoader, url);
+  const fbx = useLoader(FBXLoader, file);
 
   return (
     <>
       <ambientLight intensity={0.05} />
-      <pointLight position={[10, 10, 10]} />
-      <primitive object={fbx} scale={0.03} position={[0, -3, 0]} />
+      <pointLight position={[50, 50, 50]} />
+      <primitive object={fbx} scale={0.5} position={[0, -3, 0]} />
     </>
   );
 };
@@ -53,14 +58,14 @@ const Fbx = () => {
         <Suspense fallback={null}>
           <Scene />
           <OrbitControls />
-          <Environment preset="sunset" background />
+          {/* <Environment preset="sunset" background /> */}
         </Suspense>
       </Canvas>
       <Canvas>
         <Suspense fallback={null}>
           <Scene2 />
           <OrbitControls />
-          {/* <Environment preset="sunset" background /> */}
+          {/* <Environment preset="city" background /> */}
         </Suspense>
       </Canvas>
     </div>
