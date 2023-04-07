@@ -24,12 +24,7 @@ const Scene = () => {
   return (
     <>
       <ambientLight intensity={0.5}/>
-      <pointLight position={[10, 10, 10]} />
-      <pointLight position={[-10, 10, 10]} />
-      <pointLight position={[10, 10, 10]} />
-      <pointLight position={[10, -10, 10]} />
-      <pointLight position={[0, 10, 10]} />
-      <pointLight position={[0, -10, -10]} />
+      <pointLight position={[10, 10, 10]} color="white"  intensity={5} />
       <primitive object={fbx} scale={0.5} position={[0, -3, 0]} />
     </>
   );
